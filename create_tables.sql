@@ -56,3 +56,13 @@ CREATE TABLE Reviews (
     FOREIGN KEY (user_id) REFERENCES Users(user_id),
     FOREIGN KEY (game_id) REFERENCES Games(game_id)
 );
+CREATE TABLE Purchases (
+    purchase_id INT PRIMARY KEY,
+    user_id INT,
+    game_id INT,
+    quantity INT,
+    purchase_date DATE,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (game_id) REFERENCES Games(game_id)
+);
+
