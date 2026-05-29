@@ -22,7 +22,7 @@
 
 Таблицы базы данных:
 
-```text
+
 Developers(developer_id PK, name, country, website)
 
 Users(user_id PK, username, email, password, registration_date)
@@ -36,11 +36,11 @@ Game_Genres(game_id FK, genre_id FK)
 Libraries(library_id PK, user_id FK, game_id FK, purchase_date, playtime_hours)
 
 Reviews(review_id PK, user_id FK, game_id FK, rating, review_text, review_date)
-```
+
 
 ## Связи между таблицами
 
-```text
+
 Developers 1 --- M Games
 
 Games M --- M Genres через таблицу Game_Genres
@@ -50,7 +50,7 @@ Users M --- M Games через таблицу Libraries
 Users 1 --- M Reviews
 
 Games 1 --- M Reviews
-```
+
 
 ## Описание таблиц
 
@@ -86,13 +86,15 @@ Games 1 --- M Reviews
 
 В репозитории находятся следующие файлы:
 
-- `create_tables.sql` — создание таблиц базы данных;
-- `insert_data.sql` — добавление тестовых данных;
-- `select_queries.sql` — примеры SQL-запросов к базе данных.
+- create_tables.sql — создание таблиц базы данных;
+- insert_data.sql — добавление тестовых данных;
+- select_queries.sql — примеры SQL-запросов к базе данных.
+- abc_analysis.sql — SQL-запрос для ABC-анализа продаж игр;
+- ABC_ANALYSIS.md — отчет по результатам ABC-анализа.
 
 ## Примеры запросов
 
-В файле `select_queries.sql` представлены запросы:
+В файле select_queries.sql представлены запросы:
 
 1. вывод всех игр с разработчиками;
 2. вывод игр определенного жанра;
