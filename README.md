@@ -91,6 +91,7 @@ Games 1 --- M Reviews
 - select_queries.sql — примеры SQL-запросов к базе данных.
 - abc_analysis.sql — SQL-запрос для ABC-анализа продаж игр;
 - ABC_ANALYSIS.md — отчет по результатам ABC-анализа.
+- [ER Diagram](er_diagram.png)
 
 ## Примеры запросов
 
